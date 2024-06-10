@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A complex function grapher that support Re-Im and Mod-Arg 3D plots">
+    <meta name="keywords" content="function, 3D, website">
+    <meta name="author" content="hemisemidemipresent, hemidemisemipresent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Function Grapher</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/switch.css">
+    <link rel="stylesheet" href="css/book.css">
+    <link rel="stylesheet" href="css/help.css">
+
+    <script defer src="https://kit.fontawesome.com/59d09dda3d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="container"></div>
+    <div id="title">
+        <div id="conv">
+            <p>f(z) = </p><textarea id="fn" type="text">sin(z*z)-2*cos(z)</textarea>
+        </div>
+        <p id="err"></p>
+        <div id="txtBtns">
+            <button onclick="load()" class="btn">Запуск</button>
+        </div>
+    </div>
+
+    <div id="sidebar">
+    </div>
+    <div id="book">
+    </div>
+</body>
+<script src="js/three/three.min.js"></script>
+<script src="js/three/OrbitControls.js"></script>
+<script src="js/three/THREE.MeshLine.min.js"></script>
+
+<script type="module" src="./rust/pkg/complex_parser.js"></script>
+
+<script defer src="js/index.js"></script>
+<script src="js/GUI.js"></script>
+
+</html>

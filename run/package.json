@@ -1,0 +1,13 @@
+{
+    "name": "complex_web_server",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "node server.js & node open.js"
+    },
+    "dependencies": {
+        "http-server": "^14.1.1",
+        "open": "^10.1.0",
+        "openurl": "^1.1.1"
+    }
+}
